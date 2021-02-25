@@ -5,7 +5,12 @@ import Switch from './components/Switch';
 const DefaultView = () => {
     return (
         <>
-            <Switch />
+            <Switch
+                onClick={(ev) => {
+                    console.log('ev.target: ', ev.target);
+                    console.log('ev.target.checked: ', ev.target.checked);
+                }}
+            />
             <Switch checked />
             <Switch disabled />
             <Switch checked disabled />
