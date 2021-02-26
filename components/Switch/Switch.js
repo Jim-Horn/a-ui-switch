@@ -8,7 +8,7 @@ const Switch = (props) => {
         disabled = false,
         size = 'default',
         onClick = (ev) => {
-            console.log('Hmmm... default click handlers suck...');
+            console.log(`This switch doesn't do anything.\nAdd an onClick function`);
             console.log('ev.target.checked: ', ev.target.checked);
         },
     } = props;
