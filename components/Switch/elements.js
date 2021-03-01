@@ -171,7 +171,7 @@ const Label = styled.label`
             background: white;
         }
     }
-    ${(props) => getAdditionalStyling(props.size)}
+    ${({size}) => getAdditionalStyling(size)}
 `;
 
 export default Label;

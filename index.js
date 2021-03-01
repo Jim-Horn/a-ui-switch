@@ -18,15 +18,16 @@ const DefaultView = () => {
             <h1>Switch examples</h1>
             <SwitchBundle>
                 <Switch
+                    label='Custom function'
                     onClick={(ev) => {
                         console.log('ev.target: ', ev.target);
                         console.log('ev.target.checked: ', ev.target.checked);
                     }}
                 />
-                <Switch checked />
-                <Switch disabled />
-                <Switch checked disabled />
-                <Switch size="inline" />
+                <Switch checked id='1' label='id' />
+                <Switch disabled name='2' label='name' />
+                <Switch checked disabled className='three' label='className' />
+                <Switch size="inline" label='Ok, specifying a label' />
                 <Switch size="inline" checked />
                 <Switch size="inline" disabled />
                 <Switch size="inline" checked disabled />
